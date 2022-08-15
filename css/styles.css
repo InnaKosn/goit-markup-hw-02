@@ -1,7 +1,10 @@
 :root {
-  --primary-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+  --primary-font:"Roboto",sans-serif;
+  --secondary-font:"Raleway",sans-serif;
   --accent-color: #2196f3;
+  --primary-color:  #757575;
+  --secondary-color:  #212121;
+  --alternativ-color:#ffffff;
 }
 
 /*убирает нижнее подчёркивание*/
@@ -22,61 +25,65 @@ button {
   cursor: pointer;
 }
 span {
-  color: #000;
+  color:var(--secondary-color);
 }
 
 /*бодик*/
 body {
-  font-family: inherit;
-  font-family: "Roboto", "Raleway", sans-serif;
-  /*color:;*/
+  font-family:var(--primary-font);
+  font-size: 14px;
+  font-weight: 700;
+  background-color:var(--alternativ-color);
+  color:var(--primary-color);
+  letter-spacing: 0.03em;
+  line-height: 1.19;
+  
 }
 
 .logotyp {
-  font-family: "Raleway";
-  font-weight: 700;
+  font-family:var(--secondary-font);
   font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  
+  
+  color:var(--accent-color);
 }
 /*секция меню*/
 .menu-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color:var(--secondary-color);
 }
 .menu-link:hover,
 .menu-link:focus {
-  color: var(--accent-color);
+  color:var(--accent-color);
+}
+.menu-link:active{
+  color: rgb(247, 243, 6);
 }
 .contact-elem {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color:var(--primary-color);
 }
 .contact-elem:hover,
 .contact-elem:focus {
-  color: var(--accent-color);
+  color:var(--accent-color);
 }
 /*кнопки*/
 .hero-modal-btn {
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   text-transform: uppercase;
   cursor: pointer;
-  background-color: #2196f3;
-  color: #212121;
+  background-color:var(--accent-color);
+  color:var(--secondary-color);
 }
 .hero-modal-btn:hover,
 .hero-modal-btn:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color:var(--accent-color);
+  color:var(--alternativ-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -88,81 +95,60 @@ body {
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
-  color: #ffffff;
+  color:var(--alternativ-color);
 }
-.presen-elem-type {
-  font-weight: 700;
-  font-size: 14px;
+.present-titl {
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color:var(--secondary-color);
 }
-.present-elem-tekst {
+.present-tekst {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #757575;
 }
-.worky-titl {
-  font-weight: 700;
+/*(who)team und worky*/
+.section-titl {
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
+  color:var(--secondary-color);
 }
-.who {
+.team {
   background: #f5f4fa;
 }
-.who-titl {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #212121;
-}
-.who-name {
+
+.team-name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color:var(--secondary-color);
 }
-.who-prof {
+.team-prof {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 .foot {
   background: #2f303a;
 }
+.address{
+  font-style:normal ;
+}
 .studi {
-  font-family: "Raleway";
-  font-weight: 700;
+  font-family:var(--secondary-font);
   font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color:var(--alternativ-color);
 }
 .foot-map {
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  color:var(--alternativ-color);
 }
 .foot-link {
   font-weight: 400;
-  font-size: 14px;
   line-height: 24px;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.foot-link:hover,
+.foot-link:focus {
+color:var(--accent-color);
 }
 /*портфолио*/
 .filtr-button {
@@ -170,9 +156,8 @@ body {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
-  background-color: F5F4FA ;
-  color: #212121;
+  background-color:#F5F4FA ;
+  color:var(--secondary-color);
 }
 .filtr-button:hover,
 .filtr-button:focus {
@@ -180,21 +165,17 @@ body {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-  background-color: #2196f3;
+  color:var(--alternativ-color);
+  background-color:var(--accent-color);
 }
 .galera-picname {
-  font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color:var(--secondary-color) ;
 }
 .galera-picpro {
   font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: #757575;
 }
