@@ -58,8 +58,9 @@ body {
 .menu-link:focus {
   color:var(--accent-color);
 }
-.menu-link:active{
-  color: rgb(247, 243, 6);
+
+.current{
+  color: var(--accent-color);
 }
 .contact-elem {
   font-weight: 500;
@@ -90,14 +91,15 @@ body {
 .hero {
   background: #2f303a;
 }
-.hero-titl {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-transform: uppercase;
   color:var(--alternativ-color);
 }
-.present-titl {
+.present-title {
+  font-size:14px;
   line-height: 1.14;
   text-transform: uppercase;
   color:var(--secondary-color);
@@ -107,7 +109,7 @@ body {
   line-height: 1.71;
 }
 /*(who)team und worky*/
-.section-titl {
+.section-title {
   font-size: 36px;
   line-height: 1.17;
   color:var(--secondary-color);
@@ -167,6 +169,10 @@ color:var(--accent-color);
   text-align: center;
   color:var(--alternativ-color);
   background-color:var(--accent-color);
+}
+.filtr-button :active {
+background-color: var(--accent-color);
+color: var(--alternativ-color);
 }
 .galera-picname {
     font-size: 18px;
